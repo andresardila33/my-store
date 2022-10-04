@@ -32,6 +32,7 @@ class ProductService {
         });
     };
     async findOne(id) {
+        const name = this.getTotal();//Error provocado
         return this.products.find(item => item.id === id);
     };
     async update(id, changes) {
